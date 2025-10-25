@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+* {
+    font-family: 'Asset', cursive;
+    box-sizing: border-box;
+    color: #E8EAEE;
+    text-transform: uppercase;
+    border: 0;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 40px 31px 31px 31px;
+    overflow: hidden;
+    background: #1F2125;
+}
+.question-box, .score-box, .input-box, .input {
+    background: #289BD2;
+}
+.restart-box, .restart, .check-btn-box, .check-btn, .score {
+    background: #1383B9;
+}
+button {
+    cursor: pointer;
+}
+.main-flex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.restart-box, .restart {
+    width: 300px;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.question-box, .question {
+    width: 600px;
+    height: 220px;
+    border-radius: 30px;
+    font-size: 100px;
+    text-align: center;
+    padding: 23px 0 0 0;
+}
+.question-box {
+    position: relative;
+}
+.question-box::after {
+    content: '1 - 20';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -50px;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    background: #E8EAEE;
+    font-size: 25px;
+    color: #289BD2;
+    padding: 35px 0 0 0;
+    box-sizing: border-box;
+}
+.score-box {
+    width: 284px;
+    height: 222px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0 0;
+}
+.score-label {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.score {
+    width: 147px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.input-label {
+    font-size: 20px;
+    margin-top: 70px;
+}
+.input-wrapper {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.input {
+    width: 500px;
+    height: 150px;
+    font-size: 80px;
+    text-align: end;
+    border-radius: 30px 0 0 30px;
+    line-height: 150px;
+}
+.input:focus {
+    outline: 0;
+}
+.check-btn {
+    width: 250px;
+    height: 150px;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+}
+.title {
+    font-size: 40px;
+}
